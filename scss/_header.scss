@@ -16,7 +16,22 @@ header {
   nav > ul,
   .login {
     display: flex;
+    align-items: center;
     gap: 1rem;
+  }
+
+  a.special {
+    background-color: $bg-color;
+    color: $primary-color;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    border: 2px solid $primary-color;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: $primary-color;
+    }
   }
 }
 
@@ -24,6 +39,8 @@ header {
   display: none;
   position: absolute;
   background-color: $bg-color;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
 }
 
 .dropdown:hover ul {
@@ -32,4 +49,11 @@ header {
 
 .dropdown ul li {
   padding: 10px;
+
+  &:hover {
+    background-color: #f8f8f8;
+    a {
+      color: $primary-color;
+    }
+  }
 }
