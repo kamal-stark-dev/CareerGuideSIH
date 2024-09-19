@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $primary-color;
+  }
+
+  nav > ul,
+  .login {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: $bg-color;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.dropdown ul li {
+  padding: 10px;
+}
