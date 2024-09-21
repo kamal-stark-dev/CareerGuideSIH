@@ -46,6 +46,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 header h2 {
@@ -140,4 +141,53 @@ header a.special:hover {
 }
 .hero a i {
   font-size: 1.4rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3.2rem;
+  padding: 4.8rem 0;
+}
+.services .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.services .cards .card {
+  display: flex;
+  flex-direction: column;
+}
+.services .cards .card span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.testimonials {
+  margin: 2rem 4rem;
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+.testimonials .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+.testimonials .card i {
+  color: gold;
+}
+.testimonials .card > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.testimonials .card .avatar {
+  width: 3rem;
+  border-radius: 2rem;
 }/*# sourceMappingURL=main.css.map */
