@@ -19,6 +19,8 @@ a {
   color: #111;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  width: -moz-max-content;
+  width: max-content;
 }
 a:hover {
   color: #026cdf;
@@ -93,10 +95,17 @@ header a.special:hover {
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.8rem;
   height: 93vh;
   align-items: center;
   justify-content: center;
+}
+.hero .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 .hero .image-container {
   width: 75%;

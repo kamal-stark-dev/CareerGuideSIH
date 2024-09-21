@@ -25,6 +25,7 @@ a {
   color: $text-color;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  width: max-content;
 
   &:hover {
     color: $primary-color;
