@@ -38,6 +38,7 @@
     font-weight: 500;
     padding: 0.7rem 1.4rem;
     border: 2px solid $primary-color;
+    border-radius: 0.5rem;
     background-color: $primary-color;
     color: #fff;
     transition: all 0.4s ease-in-out;
@@ -71,10 +72,11 @@
   }
 
   .cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 3rem;
     text-align: left;
+    gap: 3rem;
 
     .card {
       display: flex;
