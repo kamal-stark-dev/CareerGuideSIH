@@ -1,0 +1,56 @@
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 3rem 6rem 3rem 3rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 6rem;
+
+  a {
+    color: #fff;
+  }
+
+  i {
+    font-size: 1.6rem;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    &:last-child {
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  .mail {
+    padding: 0.4rem 1.8rem;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: #222;
+      border: 2px solid #fff;
+    }
+  }
+}

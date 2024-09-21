@@ -26,10 +26,10 @@ a:hover {
   color: #026cdf;
 }
 
-h1 {
+h1, .services h2 {
   font-size: 4rem;
 }
-h1 span {
+h1 span, .services h2 span {
   font-weight: 800;
   background: linear-gradient(119deg, rgb(2, 108, 223) 0%, rgb(1, 167, 236) 44.15%, rgb(0, 246, 253) 100%);
   -webkit-background-clip: text;
@@ -46,7 +46,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 header h2 {
@@ -59,7 +61,7 @@ header .login {
   gap: 1rem;
 }
 header a.special {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #026cdf;
   padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
@@ -148,7 +150,10 @@ header a.special:hover {
   flex-direction: column;
   text-align: center;
   gap: 3.2rem;
-  padding: 4.8rem 0;
+  padding: 4rem 0 8rem 0;
+}
+.services h2 {
+  font-size: 3rem;
 }
 .services .cards {
   display: flex;
@@ -190,4 +195,53 @@ header a.special:hover {
 .testimonials .card .avatar {
   width: 3rem;
   border-radius: 2rem;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 3rem 6rem 3rem 3rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+footer a {
+  color: #fff;
+}
+footer i {
+  font-size: 1.6rem;
+}
+footer .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+footer .column:last-child {
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .socials i {
+  font-size: 2rem;
+}
+footer .mail {
+  padding: 0.4rem 1.8rem;
+  color: #222;
+  background-color: #fff;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: color 0.3s ease-in-out;
+}
+footer .mail:hover {
+  color: #fff;
+  background-color: #222;
+  border: 2px solid #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -7,7 +7,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: $bg-color;
+  background-color: rgba($bg-color, 0.6);
+  backdrop-filter: blur(6px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
   h2 {
@@ -22,7 +23,7 @@ header {
   }
 
   a.special {
-    background-color: $bg-color;
+    background-color: rgba($bg-color, 0.1);
     color: $primary-color;
     padding: 0.4rem 0.8rem;
     border-radius: 0.3rem;
