@@ -4,6 +4,7 @@ $card-width: 360px;
   padding: 2rem;
 
   & > h2 {
+    @extend h1;
     font-size: 3rem;
     text-align: center;
   }

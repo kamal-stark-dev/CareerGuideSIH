@@ -26,15 +26,19 @@ a:hover {
   color: #026cdf;
 }
 
-h1, .services h2 {
+h1, .careers > h2, .services h2, main h2 {
   font-size: 4rem;
 }
-h1 span, .services h2 span {
+h1 span, .careers > h2 span, .services h2 span, main h2 span {
   font-weight: 800;
   background: linear-gradient(119deg, rgb(2, 108, 223) 0%, rgb(1, 167, 236) 44.15%, rgb(0, 246, 253) 100%);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+
+main h2 {
+  font-size: 2.4rem;
 }
 
 header {
@@ -303,6 +307,59 @@ footer .mail:hover {
   border: 2px solid #fff;
 }
 
+.personalized {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.personalized form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+.personalized form label {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 5px;
+  color: #555;
+}
+.personalized form input[type=text],
+.personalized form input[type=email],
+.personalized form input[type=number],
+.personalized form select,
+.personalized form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.personalized form input[type=checkbox],
+.personalized form input[type=radio] {
+  margin-right: 10px;
+}
+.personalized form button {
+  background-color: #5cb85c;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.personalized form button:hover {
+  background-color: #4cae4c;
+}
+
 @media (width <= 1024px) {
   .hero {
     height: 83vh;
@@ -318,7 +375,7 @@ footer .mail:hover {
   }
 }
 @media (width <= 768px) {
-  .hero .info h1, .hero .info .services h2, .services .hero .info h2 {
+  .hero .info h1, .hero .info main h2, main .hero .info h2, .hero .info .services h2, .services .hero .info h2, .hero .info .careers > h2 {
     font-size: 2.6rem;
     margin: 0 auto;
   }
@@ -353,7 +410,7 @@ footer .mail:hover {
   header nav ul {
     display: none;
   }
-  .hero .info h1, .hero .info .services h2, .services .hero .info h2 {
+  .hero .info h1, .hero .info main h2, main .hero .info h2, .hero .info .services h2, .services .hero .info h2, .hero .info .careers > h2 {
     font-size: 2rem;
     margin: 0 auto;
   }

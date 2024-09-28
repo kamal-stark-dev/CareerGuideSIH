@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerGuide</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>CareerGuide</h2>
+      <nav>
+        <ul>
+          <li class="dropdown">
+            <a href="#!">Students <i class="ri-arrow-drop-down-line"></i></a>
+            <ul>
+              <li><a href="#!">Class 8-9</a></li>
+              <li><a href="#!">Class 10-12</a></li>
+              <li><a href="#!">College / Graduate</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#!"
+              >Professionals <i class="ri-arrow-drop-down-line"></i
+            ></a>
+            <ul>
+              <li><a href="#!">Career Development</a></li>
+              <li><a href="#!">Changing Career</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#!"
+              >Career Fields <i class="ri-arrow-drop-down-line"></i
+            ></a>
+            <ul>
+              <li><a href="#!">Sports</a></li>
+              <li><a href="#!">Government Jobs</a></li>
+              <li><a href="#!">Business / Entrepreneurship</a></li>
+              <li><a href="#!">Engineering</a></li>
+              <li><a href="#!">Medical</a></li>
+              <li><a href="#!">Content Creation</a></li>
+              <li><a href="#!">More...</a></li>
+            </ul>
+          </li>
+          <li><a href="#!">Counselling</a></li>
+        </ul>
+      </nav>
+      <div class="login">
+        <a href="#!" class="special">Get Started</a>
+        <a href="#!">Login</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="personalized">
+        <fieldset>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required />
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" />
+            <label for="other">Other</label>
+
+            <label for="class">Class/Grade:</label>
+            <input type="text" id="class" name="class" required />
+
+            <label for="stream">Stream (if class is above 9th):</label>
+            <select id="stream" name="stream">
+              <option value="">Select</option>
+              <option value="Science">Science</option>
+              <option value="Commerce">Commerce</option>
+              <option value="Arts">Arts</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label>Hobbies and Interests (Select all that apply):</label>
+            <input
+              type="checkbox"
+              id="reading"
+              name="hobbies"
+              value="Reading"
+            />
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports" />
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="hobbies" value="Music" />
+            <label for="music">Music</label>
+            <input
+              type="checkbox"
+              id="art"
+              name="hobbies"
+              value="Art & Craft"
+            />
+            <label for="art">Art & Craft</label>
+            <input
+              type="checkbox"
+              id="traveling"
+              name="hobbies"
+              value="Traveling"
+            />
+            <label for="traveling">Traveling</label>
+            <input
+              type="checkbox"
+              id="cooking"
+              name="hobbies"
+              value="Cooking"
+            />
+            <label for="cooking">Cooking</label>
+            <input
+              type="checkbox"
+              id="otherHobby"
+              name="hobbies"
+              value="Other"
+            />
+            <label for="otherHobby"
+              >Other: <input type="text" name="otherHobbyText"
+            /></label>
+
+            <label>Favorite Subjects (Select all that apply):</label>
+            <input
+              type="checkbox"
+              id="math"
+              name="subjects"
+              value="Mathematics"
+            />
+            <label for="math">Mathematics</label>
+            <input
+              type="checkbox"
+              id="science"
+              name="subjects"
+              value="Science"
+            />
+            <label for="science">Science</label>
+            <input
+              type="checkbox"
+              id="english"
+              name="subjects"
+              value="English"
+            />
+            <label for="english">English</label>
+            <input
+              type="checkbox"
+              id="history"
+              name="subjects"
+              value="History"
+            />
+            <label for="history">History</label>
+            <input
+              type="checkbox"
+              id="geography"
+              name="subjects"
+              value="Geography"
+            />
+            <label for="geography">Geography</label>
+            <input
+              type="checkbox"
+              id="cs"
+              name="subjects"
+              value="Computer Science"
+            />
+            <label for="cs">Computer Science</label>
+            <input
+              type="checkbox"
+              id="otherSubject"
+              name="subjects"
+              value="Other"
+            />
+            <label for="otherSubject"
+              >Other: <input type="text" name="otherSubjectText"
+            /></label>
+
+            <label for="career">Career Aspirations:</label>
+            <input type="text" id="career" name="career" required />
+
+            <label for="achievements">Academic Achievements:</label>
+            <input type="text" id="achievements" name="achievements" />
+
+            <label for="scholarships">Any Scholarships or Awards:</label>
+            <input type="text" id="scholarships" name="scholarships" />
+
+            <label>Special Skills (Select all that apply):</label>
+            <input type="checkbox" id="coding" name="skills" value="Coding" />
+            <label for="coding">Coding</label>
+            <input
+              type="checkbox"
+              id="languages"
+              name="skills"
+              value="Languages"
+            />
+            <label for="languages"
+              >Languages: <input type="text" name="languagesText"
+            /></label>
+            <input
+              type="checkbox"
+              id="publicSpeaking"
+              name="skills"
+              value="Public Speaking"
+            />
+            <label for="publicSpeaking">Public Speaking</label>
+            <input
+              type="checkbox"
+              id="graphicDesign"
+              name="skills"
+              value="Graphic Design"
+            />
+            <label for="graphicDesign">Graphic Design</label>
+            <input
+              type="checkbox"
+              id="otherSkill"
+              name="skills"
+              value="Other"
+            />
+            <label for="otherSkill"
+              >Other: <input type="text" name="otherSkillText"
+            /></label>
+
+            <label
+              >Participation in Competitions (Select all that apply):</label
+            >
+            <input
+              type="checkbox"
+              id="scienceFairs"
+              name="competitions"
+              value="Science Fairs"
+            />
+            <label for="scienceFairs">Science Fairs</label>
+            <input
+              type="checkbox"
+              id="mathOlympiads"
+              name="competitions"
+              value="Math Olympiads"
+            />
+            <label for="mathOlympiads">Math Olympiads</label>
+            <input
+              type="checkbox"
+              id="artCompetitions"
+              name="competitions"
+              value="Art Competitions"
+            />
+            <label for="artCompetitions">Art Competitions</label>
+            <input
+              type="checkbox"
+              id="sportsEvents"
+              name="competitions"
+              value="Sports Events"
+            />
+            <label for="sportsEvents">Sports Events</label>
+            <input
+              type="checkbox"
+              id="otherCompetition"
+              name="competitions"
+              value="Other"
+            />
+            <label for="otherCompetition"
+              >Other: <input type="text" name="otherCompetitionText"
+            /></label>
+
+            <button type="submit">Submit</button>
+          </form>
+        </fieldset>
+      </div>
+    </main>
+
+    <footer>
+      <div class="column">
+        <h2>CareerGuide</h2>
+        <span
+          >Find your passion, don't do it just for money or job security.</span
+        >
+        <p>&copy; Copyright 2024, Techno Tuners Vortex.</p>
+      </div>
+      <div class="column">
+        <b>Navigate Here</b>
+        <a href="#!">Explore</a>
+        <a href="#!">Students</a>
+        <a href="#!">Professionals</a>
+        <a href="#!">Counselling</a>
+      </div>
+      <div class="column">
+        <b>Explore these fields</b>
+        <a href="#!">Sports</a>
+        <a href="#!">Engineering</a>
+        <a href="#!">Medical</a>
+        <a href="#!">Government Jobs</a>
+        <a href="#!">Content Creation</a>
+        <a href="#!">Entrepreneurship</a>
+      </div>
+      <div class="column">
+        <div class="socials">
+          <a href="#!"><i class="ri-youtube-line"></i></a>
+          <a href="#!"><i class="ri-twitter-x-line"></i></a>
+          <a href="#!"><i class="ri-instagram-line"></i></a>
+          <a href="#!"><i class="ri-facebook-fill"></i></a>
+        </div>
+        <a href="#!" class="mail"><i class="ri-mail-add-line"></i> MAIL US</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
